@@ -9,6 +9,9 @@ Route::get('/homepage-category-banner', [HomeController::class, 'homePageCategor
 Route::get('/categories', [HomeController::class, 'storeCategories']);
 Route::get('/banners/{type}', [HomeController::class, 'homeSectionBanner']);
 Route::get('/trending-products/{limit}', [HomeController::class, 'trendingProducts']);
+Route::get('/trendingProductsWithOffers/{limit}', [HomeController::class, 'trendingProductsWithOffers']);
+
+
 // Route::get('/user', function (Request $request) {
 //     return $request->user();
 // })->middleware('api/admin');
